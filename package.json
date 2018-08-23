@@ -14,6 +14,7 @@
   "author": "Raldes krisnu",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "bcrypt": "^3.0.0",
     "body-parser": "^1.18.3",
     "chai": "^4.1.2",
@@ -24,11 +25,11 @@
     "express": "~4.14.0",
     "jwt-simple": "^0.5.1",
     "knex": "^0.15.2",
+    "mocha": "^5.2.0",
+    "mocha-jscs": "~5.0.1",
     "moment": "^2.22.2",
     "morgan": "^1.9.0",
-    "pg": "^7.4.3",
-    "mocha-jscs": "~5.0.1",
-    "mocha": "^5.2.0"
+    "pg": "^7.4.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
