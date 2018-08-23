@@ -3,17 +3,17 @@ const jwt = require('jwt-simple');
 
 function encodeToken(users) {
     const payload = {
-        exp: Moment().add(14, 'days').unix(),
-        iat: Moment().unix(),
+        exp: moment().add(14, 'days').unix(),
+        iat: moment().unix(),
         sub: users.id
     };
 
-    return Jwt.encode(payload, process.env.TOKEN_SECRET);
+    return jwt.encode(payload, process.env.TOKEN_SECRET);
 }
 
 function decodeToken(token, callback){
     const payload = jwt.decode(token, process.env.TOKEN_SECRET);
-    const now = Moment.unix();
+    const now = moment.unix();
     if (now > payload.exp) callback('Token has expired.');
     else callback(null, payload);
 }

@@ -1,8 +1,7 @@
 exports.up = (knex, Promise) => {
-    return knex.schema.createTable('users', (table) => {
-      table.increments();
+    return knex.schema.createTablekn('users', (table) => {
+      table.increments('id').primary().unsigned();
       table.string('username').unique().notNullable();
-      table.string('application_name');
       table.string('password');
       table.timestamp('created_at').defaultTo(knex.raw('now()'));
     });

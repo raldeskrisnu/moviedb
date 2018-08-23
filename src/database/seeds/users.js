@@ -8,7 +8,6 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex('users').insert([
         {
-            id: 1, 
             username: 'Raldes',
             application_name: 'movieDbAndroidNative',
             password:hash
