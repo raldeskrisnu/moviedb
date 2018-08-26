@@ -16,7 +16,6 @@
       // development error handler (will print stacktrace)
       if (app.get('env') === 'development') {
         app.use(function(err, req, res, next) {
-          console.log('erraa');
           res.status(err.status || 500).json({
             message: err.message,
             error: err

@@ -1,3 +1,5 @@
 NODE_DEVELOPMENT=development
 TOKEN_SECRET=\xf8%\xa8\xf2INz\xcc:\x171\xeei\x82\xce\x81Y\xc2HJ\xe5\x01\xf3$
 DATABASE_NAME=moviedb
+MOVIE_TOKEN=321e3c990bf5421f1e48f2584df867e9
+URL_HOST=https://api.themoviedb.org/3/movie/
