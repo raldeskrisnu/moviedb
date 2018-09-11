@@ -1,5 +1,3 @@
-const env = require('dotenv').config({path: '.env'});
-
 module.exports = {
     development: {
         client: 'postgresql',
