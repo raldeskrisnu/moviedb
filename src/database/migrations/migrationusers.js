@@ -1,5 +1,5 @@
 exports.up = (knex, Promise) => {
-    return knex.schema.createTablekn('users', (table) => {
+    return knex.schema.createTable('users', (table) => {
       table.increments('id').primary().unsigned();
       table.string('username').unique().notNullable();
       table.string('password');
