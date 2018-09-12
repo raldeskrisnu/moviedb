@@ -56,3 +56,6 @@ integration with <https://api.themoviedb.org>
 3. Axios
 4. Knex
 5. bcrypt
+
+**Live**
+https://moviedb-svc.herokuapp.com
