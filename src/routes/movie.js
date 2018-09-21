@@ -13,8 +13,8 @@ app.get('/nowplaying',helper.authenticateToken, function(req,res) {
     });
 });
 
-app.get('/popularmovie', helper.authenticateToken, function(req,res){
-    axios.get(process.env.URL_HOST + 'popular?api_key=' + process.env.MOVIE_TOKEN)
+app.get('/popularmovie/page=:id', helper.authenticateToken, function(req,res){
+    axios.get(process.env.URL_HOST + 'popular?api_key=' + process.env.MOVIE_TOKEN + '&page='+req.params.id)
     .then(function(response){
         return res.send(response.data);
     })
